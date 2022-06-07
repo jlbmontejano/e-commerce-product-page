@@ -49,3 +49,5 @@ Users should be able to:
 
 ## Author
 
+- LinkedIn - [@jlbmontejano](https://www.linkedin.com/in/jlbmontejano/)
+- Frontend Mentor - [@jlbmontejano](https://www.frontendmentor.io/profile/jlbmontejano)
