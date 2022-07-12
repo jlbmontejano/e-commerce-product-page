@@ -23,11 +23,15 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar
+        windowWidth={windowWidth}
+        cartQuantity={cartQuantity}
+        setOverlayActive={setOverlayActive}
+      />
       <div
         className="main-body"
         style={{ opacity: overlayActive === true ? "30%" : "" }}
       >
-        <Navbar windowWidth={windowWidth} cartQuantity={cartQuantity} />
         <Gallery
           windowWidth={windowWidth}
           overlayActive={overlayActive}

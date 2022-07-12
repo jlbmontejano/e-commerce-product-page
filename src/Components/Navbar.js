@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Cart from "./Cart";
 import "./Components.css";
 
-const Navbar = ({ windowWidth, cartQuantity }) => {
+const Navbar = ({ windowWidth, cartQuantity, setOverlayActive }) => {
   const [displaySidemenu, setDisplaySidemenu] = useState(false);
   const [displayCart, setDisplayCart] = useState(false);
 
@@ -15,7 +15,10 @@ const Navbar = ({ windowWidth, cartQuantity }) => {
             <img
               src={process.env.PUBLIC_URL + "/images/icon-menu.svg"}
               alt="menu"
-              onClick={() => setDisplaySidemenu(true)}
+              onClick={() => {
+                setDisplaySidemenu(true);
+                setOverlayActive(true);
+              }}
               className="mobile-navbar-image"
             />
             <img
@@ -46,7 +49,10 @@ const Navbar = ({ windowWidth, cartQuantity }) => {
               <img
                 src={process.env.PUBLIC_URL + "/images/icon-close.svg"}
                 alt="menu"
-                onClick={() => setDisplaySidemenu(false)}
+                onClick={() => {
+                  setDisplaySidemenu(false);
+                  setOverlayActive(false);
+                }}
                 className="icon-close"
               />
               <h3>Collections</h3>
