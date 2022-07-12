@@ -1,0 +1,198 @@
+/* MOBILE NAVBAR */
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-navbar-image {
+    height: 20px;
+}
+
+.mobile-avatar-image {
+    height: 30px;
+}
+
+.mobile-navbar-leftside {
+    display: flex;
+    align-items: center;
+    margin: .5em;
+    gap: .75em;
+}
+
+.mobile-navbar-rightside {
+    display: flex;
+    align-items: center;
+    margin: .5em;
+    gap: .75em;
+}
+
+.cart-icon-container {
+    position: relative;
+}
+
+.current-cart-amount {
+    position: absolute;
+    bottom: 4px;
+    left: 14px;
+    background-color: var(--clr-orange);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: .7em;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.mobile-sidemenu {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+    padding: 1em;
+}
+
+.icon-close {
+    margin-bottom: .5em;
+}
+
+/* DESKTOP NAVBAR */
+.desktop-navbar {
+    display: grid;
+}
+
+.desktop-navbar-options {
+    display: grid;
+}
+
+/* CART */
+.cart-container {
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    top: 3.5em;
+    width: 90%;
+    display: grid;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.cart-container-info {
+    display: grid;
+}
+
+.cart-product-info {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    align-items: center;
+}
+
+.cart-product-image {
+    height: 5em;
+    grid-row: span 2;
+}
+
+/* GALLERY */
+.mobile-images-container {
+    position: relative;
+}
+
+.control-arrows {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: var(--clr-grayish-blue);
+    width: 30px;
+    height: 30px;
+    padding: .25em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.control-arrows[disabled] {
+    opacity: .75;
+    filter: brightness(75%);
+}
+
+.prev-control-arrow {
+    left: .25rem;
+}
+
+.next-control-arrow {
+    right: .25rem;
+}
+
+.mobile-product-image {
+    width: 100vw;
+}
+
+/* DESCRIPTION */
+.description-container {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.sneaker-company {
+    color: var(--clr-orange);
+    text-transform: uppercase;
+}
+
+.product-description {
+    margin: 1em auto;
+    color: var(--clr-dark-grayish-blue);
+}
+
+.price-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-details-final {
+    display: flex;
+    align-items: center;
+}
+
+.price-details-final>h1 {
+    display: inline;
+    margin: 0 .25em;
+
+}
+
+.discount {
+    color: var(--clr-orange);
+    background-color: var(--clr-pale-orange);
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: var(--clr-grayish-blue);
+}
+
+/* PURCHASE */
+.purchase-container {
+    display: grid;
+}
+
+.shoe-quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shoe-quantity-container span {
+    font-size: 1.25em;
+}
+
+.icon-plus,
+.icon-minus {
+    width: 20px;
+}
+
+.icon-minus {
+    height: 7px;
+}
